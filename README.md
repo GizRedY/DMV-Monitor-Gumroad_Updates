@@ -100,9 +100,13 @@ Please respect DMV terms and avoid aggressive polling. This tool is for personal
 ---
 
 <img width="1443" height="815" alt="image" src="https://github.com/user-attachments/assets/a2a1b52c-9cde-4547-8bb2-1c4f5855937d" />
+
 ---
+
 <img width="1420" height="816" alt="image" src="https://github.com/user-attachments/assets/e92b8123-ba7b-4b5a-ae92-60113a634151" />
+
 ---
+
 <img width="1421" height="814" alt="image" src="https://github.com/user-attachments/assets/d3a2e72c-804a-4b09-9d3b-70d4bab4e41c" />
 
 
