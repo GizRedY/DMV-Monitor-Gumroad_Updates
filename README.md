@@ -33,13 +33,12 @@ Get the latest installer from **[Releases](https://github.com/GizRedY/DMV-Monito
 
 ## 🧭 How it works (high-level)
 
-flowchart LR
-  U[User] --> APP[DMV Monitor (Windows EXE)]
-  APP <---> UI[Embedded HTML UI / Socket.IO]
-  APP --> PW[Playwright Chromium]
-  APP --> DMV[NC DMV website]
-  APP --> PB[Pushbullet API]
-  APP --> GH[GitHub JSON Manifest]
+U[User] --> APP[DMV Monitor (Windows EXE)]
+APP <---> UI[Embedded HTML UI / Socket.IO]
+APP --> PW[Playwright Chromium]
+APP --> DMV[NC DMV website]
+APP --> PB[Pushbullet API]
+APP --> GH[GitHub JSON Manifest]
 
 ---
 
