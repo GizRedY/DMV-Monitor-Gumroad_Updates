@@ -17,7 +17,7 @@ Get the latest installer from **[Releases](https://github.com/GizRedY/DMV-Monito
 
 - Update manifest (JSON) used by the app’s auto-update mechanism
 - Releases with signed/packaged Windows builds
-- Documentation (this README) and, optionally, screenshots/GIFs
+- Documentation (this README) and screenshots
 
 ---
 
@@ -56,8 +56,6 @@ Get the latest installer from **[Releases](https://github.com/GizRedY/DMV-Monito
 - The app reads an **update manifest (JSON)** in this repository
 - If a newer version is available, you’ll be prompted to update in-app
 - Alternatively, you can manually download the latest build from **Releases**
-
-> If you rename or relocate the manifest file in the repo, update the app’s config accordingly (the manifest URL is configurable in app settings/build config).
 
 ---
 
@@ -116,5 +114,3 @@ Please respect DMV terms and avoid aggressive polling. This tool is for personal
 
 **Mikhail Drogalev**  
 LinkedIn: https://www.linkedin.com/in/mikhail-drogalev-a4bbab341/
-
-*(This repository is part of my portfolio; source code available for discussion during interviews.)*
