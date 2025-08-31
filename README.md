@@ -33,6 +33,19 @@ Get the latest installer from **[Releases](https://github.com/GizRedY/DMV-Monito
 
 ## 🧭 How it works (high-level)
 
+```mermaid
+flowchart LR
+  U[User] --> APP[DMV Monitor (Windows EXE)]
+  APP <---> UI[Embedded HTML UI / Socket.IO]
+  APP --> PW[Playwright Chromium]
+  APP --> DMV[NC DMV website]
+  APP --> PB[Pushbullet API]
+  APP --> GH[GitHub JSON Manifest]
+
+---
+
+## 🧭 How it works (high-level)
+
 - The app periodically checks DMV availability using a headless browser (Playwright)
 - Results stream to the UI over Socket.IO
 - When a new slot is detected, a Pushbullet notification is sent
