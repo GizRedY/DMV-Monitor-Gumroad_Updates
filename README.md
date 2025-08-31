@@ -33,17 +33,6 @@ Get the latest installer from **[Releases](https://github.com/GizRedY/DMV-Monito
 
 ## 🧭 How it works (high-level)
 
-U[User] --> APP[DMV Monitor (Windows EXE)]
-APP <---> UI[Embedded HTML UI / Socket.IO]
-APP --> PW[Playwright Chromium]
-APP --> DMV[NC DMV website]
-APP --> PB[Pushbullet API]
-APP --> GH[GitHub JSON Manifest]
-
----
-
-## 🧭 How it works (high-level)
-
 - The app periodically checks DMV availability using a headless browser (Playwright)
 - Results stream to the UI over Socket.IO
 - When a new slot is detected, a Pushbullet notification is sent
@@ -106,13 +95,17 @@ Please respect DMV terms and avoid aggressive polling. This tool is for personal
 
 ## 🖼 Screenshots / Demo
 
-_Add screenshots or a short GIF here (loading screen, settings, “slot found” log, test notification confirmation)._
+<img width="1435" height="823" alt="image" src="https://github.com/user-attachments/assets/825b71fe-d6df-44b6-8b47-6acae59b01e2" />
+<img width="1443" height="815" alt="image" src="https://github.com/user-attachments/assets/a2a1b52c-9cde-4547-8bb2-1c4f5855937d" />
+<img width="1420" height="816" alt="image" src="https://github.com/user-attachments/assets/e92b8123-ba7b-4b5a-ae92-60113a634151" />
+<img width="1421" height="814" alt="image" src="https://github.com/user-attachments/assets/d3a2e72c-804a-4b09-9d3b-70d4bab4e41c" />
+
 
 ---
 
 ## 📬 Contact
 
-**Mikhail Drogalev** — Durham, NC  
+**Mikhail Drogalev**  
 LinkedIn: https://www.linkedin.com/in/mikhail-drogalev-a4bbab341/
 
 *(This repository is part of my portfolio; source code available for discussion during interviews.)*
