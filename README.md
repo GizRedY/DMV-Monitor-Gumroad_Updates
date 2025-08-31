@@ -33,7 +33,6 @@ Get the latest installer from **[Releases](https://github.com/GizRedY/DMV-Monito
 
 ## 🧭 How it works (high-level)
 
-```mermaid
 flowchart LR
   U[User] --> APP[DMV Monitor (Windows EXE)]
   APP <---> UI[Embedded HTML UI / Socket.IO]
