@@ -50,7 +50,6 @@ When a new slot is detected, a Pushbullet notification is sent.
 On startup, the app compares its version with the update manifest hosted in this repo and offers an in-app update if a newer build is available.
 
 🚀 Quick Start (End-Users)
-
 Download the latest installer from Releases
 
 Install and run DMV Monitor on Windows 10/11
@@ -62,7 +61,6 @@ Click “Send Test Notification” to confirm delivery, then start monitoring
 iOS: Pushbullet is Android-focused; iPhone push flow not supported currently.
 
 🔄 Auto-Update
-
 The app reads an update manifest (JSON) in this repository
 
 If a newer version is available, you’ll be prompted to update in-app
@@ -71,8 +69,18 @@ You can also manually download the latest build from Releases
 
 If you rename or relocate the manifest file, update the app’s config accordingly (the manifest URL is configurable in app settings/build config).
 
+<details> <summary><strong>Example update manifest (JSON)</strong></summary>
+json
+Copy code
+{
+  "version": "1.2.3",
+  "url": "https://github.com/GizRedY/DMV-Monitor-Gumroad_Updates/releases/download/v1.2.3/DMVMonitor-Setup-1.2.3.exe",
+  "notes": "What's new: ...",
+  "min_supported_version": "1.0.0",
+  "published_at": "2025-08-30T12:00:00Z"
+}
+</details>
 🔐 Privacy & Security
-
 Your Pushbullet token is stored locally on your device
 
 The app sends notifications only to the configured Pushbullet account
@@ -80,11 +88,9 @@ The app sends notifications only to the configured Pushbullet account
 No personal data is uploaded to this repository
 
 ⚖️ Ethical Use
-
 Please respect DMV terms and avoid aggressive polling. This tool is for personal convenience only and does not guarantee appointment availability.
 
 🧩 For Hiring Managers (what this demonstrates)
-
 Desktop packaging of a Python app and auto-update pipeline via GitHub
 
 Browser automation with Playwright and a real-time Socket.IO UI
@@ -96,7 +102,6 @@ Operational guardrails: single-instance lock, safe startup/shutdown
 Product thinking: onboarding flow, status/health indicators, and update UX
 
 🗺 Roadmap
-
 Alternative notification channels (including iOS-friendly options)
 
 Adjustable polling profiles and back-off strategies
@@ -104,12 +109,9 @@ Adjustable polling profiles and back-off strategies
 Cross-platform dev convenience
 
 🖼 Screenshots / Demo
-
 Add screenshots or a short GIF here (loading screen, settings, “slot found” log, test notification confirmation).
 
 📬 Contact
-
 Mikhail Drogalev — Durham, NC
 LinkedIn: https://www.linkedin.com/in/mikhail-drogalev-a4bbab341/
-
 (This repository is part of my portfolio; source code available for discussion during interviews.)
