@@ -1,35 +1,39 @@
-DMV Monitor — NC DMV Appointment Tracker (Windows)
+# DMV Monitor — NC DMV Appointment Tracker (Windows)
 
-A desktop app that monitors North Carolina DMV appointment availability and notifies you when new slots appear. Built with Python, Flask + Socket.IO, and Playwright, packaged for Windows.
+A desktop app that monitors North Carolina DMV appointment availability and notifies you when new slots appear. Built with **Python**, **Flask + Socket.IO**, and **Playwright**, packaged for Windows.
 
-Note: This repository hosts release builds and the update manifest (JSON). Source code is not published here.
+> **Note**  
+> This repository hosts **release builds** and the **update manifest (JSON)**. Source code is **not** published here.
 
-📥 Download
+---
 
-Get the latest installer from Releases
-.
+## 📥 Download
 
-🗂 What’s in this repo
+Get the latest installer from **[Releases](https://github.com/GizRedY/DMV-Monitor-Gumroad_Updates/releases)**.
 
-Update manifest (JSON) used by the app’s auto-update mechanism.
+---
 
-Releases with signed/packaged Windows builds.
+## 🗂 What’s in this repo
 
-Documentation (this README) and, optionally, screenshots/GIFs.
+- **Update manifest (JSON)** used by the app’s auto-update mechanism  
+- **Releases** with packaged Windows builds  
+- This README and (optionally) screenshots/GIFs
 
-✨ Highlights
+---
 
-Real-time monitoring UI with live logs and status indicators
+## ✨ Highlights
 
-Push notifications via Pushbullet (Android supported)
+- Real-time monitoring UI with live logs and status indicators  
+- Push notifications via **Pushbullet** (Android supported)  
+- Windows packaging (single executable), **single-instance** guard  
+- Background **auto-update** driven by this repo’s JSON manifest  
+- Clean startup/shutdown routines and user-friendly error handling
 
-Windows packaging (single executable), single-instance guard
+---
 
-Background auto-update driven by this repo’s JSON manifest
+## 🧭 How it works (high-level)
 
-Clean startup/shutdown routines and user-friendly error handling
-
-🧭 How it works (high-level)
+```mermaid
 flowchart LR
   U[User] --> APP[DMV Monitor (Windows EXE)]
   APP <---> UI[Embedded HTML UI / Socket.IO]
@@ -37,8 +41,6 @@ flowchart LR
   APP --> DMV[NC DMV website]
   APP --> PB[Pushbullet API]
   APP --> GH[GitHub JSON Manifest]
-
-
 The app periodically checks DMV availability using a headless browser (Playwright).
 
 Results stream to the UI over Socket.IO.
@@ -50,33 +52,32 @@ On startup, the app compares its version with the update manifest hosted in this
 🚀 Quick Start (End-Users)
 
 Download the latest installer from Releases
-.
 
-Install and run DMV Monitor on Windows 10/11.
+Install and run DMV Monitor on Windows 10/11
 
-(Optional) Open Settings → Notifications and paste your Pushbullet Access Token.
+(Optional) Open Settings → Notifications and paste your Pushbullet Access Token
 
-Click “Send Test Notification” to confirm delivery, then start monitoring.
+Click “Send Test Notification” to confirm delivery, then start monitoring
 
 iOS: Pushbullet is Android-focused; iPhone push flow not supported currently.
 
 🔄 Auto-Update
 
-The app reads an update manifest (JSON) in this repository.
+The app reads an update manifest (JSON) in this repository
 
-If a newer version is available, you’ll be prompted to update in-app.
+If a newer version is available, you’ll be prompted to update in-app
 
-Alternatively, you can manually download the latest build from Releases.
+You can also manually download the latest build from Releases
 
-If you rename or relocate the manifest file in the repo, update the app’s config accordingly (the manifest URL is configurable in app settings/build config).
+If you rename or relocate the manifest file, update the app’s config accordingly (the manifest URL is configurable in app settings/build config).
 
 🔐 Privacy & Security
 
-Your Pushbullet token is stored locally on your device.
+Your Pushbullet token is stored locally on your device
 
-The app sends notifications only to the configured Pushbullet account.
+The app sends notifications only to the configured Pushbullet account
 
-No personal data is uploaded to this repository.
+No personal data is uploaded to this repository
 
 ⚖️ Ethical Use
 
